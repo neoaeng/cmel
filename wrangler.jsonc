@@ -1,5 +1,5 @@
 {
-  "name": "random-joke-generator",
+  "name": "temc",
   "compatibility_date": "2025-04-02",
   "main": "_worker.js"
 }
