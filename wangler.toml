@@ -1,7 +1,7 @@
 name = "temc"
 main = "_worker.js"
 compatibility_date = "2025-04-02"
-assets:{directory: "./dist"}
+assets={directory: "./dist"}
 # node_compat = true
 workers_dev = true
 
