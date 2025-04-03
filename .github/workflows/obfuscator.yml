@@ -16,8 +16,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          path: worker
-
+          
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
@@ -25,8 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install -g javascript-obfuscator
-        working-directory: worker
-
+       
       - name: Obfuscate code
         run: |
           javascript-obfuscator 明文源码.js --output _worker.js \
