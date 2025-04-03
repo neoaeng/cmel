@@ -1,0 +1,7 @@
+name = "len2utegdemc"
+compatibility_date = "2025-04-03"
+
+[build]
+command = "npx wrangler deploy"  # 如果有构建命令，请将其替换为实际的构建命令
+[build.upload]
+main = "_worker.js"  # 替换为你的入口文件路径
