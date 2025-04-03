@@ -2,4 +2,9 @@
   "name": "temc",
   "compatibility_date": "2025-04-03",
   "main": "_worker.js"
+  "account_id": "9b34c1bb8c56f593f2e7e609228e2717"
+
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
 }
