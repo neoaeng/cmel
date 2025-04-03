@@ -1,0 +1,21 @@
+name: Deploy Worker
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy to Cloudflare
+        run: npx wrangler deploy _worker.js
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ 7zhkPCjN80dckW9ZvtFOJk2la_AjlTAU0u1or8im }}
