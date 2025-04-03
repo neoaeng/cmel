@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          path: worker
 
       - name: Use Node.js
         uses: actions/setup-node@v3
@@ -24,6 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install -g javascript-obfuscator
+        working-directory: worker
 
       - name: Obfuscate code
         run: |
@@ -41,7 +43,7 @@ jobs:
           --transform-object-keys true \
           --unicode-escape-sequence true
 
-      - name: Commit changes
+      - name: 提交更改
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
