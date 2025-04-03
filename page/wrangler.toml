@@ -1,0 +1,8 @@
+name = "len2utegdemc"
+type = "javascript"
+compatibility_date = "2025-04-03"
+
+[env.production]
+account_id = "your-account-id"
+zone_id = "your-zone-id"
+route = "your-route"
